@@ -11,6 +11,12 @@ This repository contains support documents, not executable releases. Active deve
 
 Do not send API keys, passwords, login links, raw AI prompts, private logs, personal information, or files from a shared team folder. Do not reinstall or download a package just to identify your version. If a detail is unknown, say so.
 
+## Optional usage feedback / 任意の使用感
+
+If you have tried AI Usage Bar, you can share [usage feedback](https://github.com/noah-traderlab/ai-usage-bar-support/issues/new?template=usage_feedback.yml) to help improve it. Short comments about what helped, what was difficult, or what is unclear are welcome. Posting is optional; no installation or favorable review is required. Your issue and GitHub account are public, so follow the information limits above. Feedback does not grant permission for quotation or republication for other purposes; any such request would separately identify the exact excerpt, account attribution, recipient, and purpose.
+
+AI Usage Barを使ってみた方は、改善のための[使用感](https://github.com/noah-traderlab/ai-usage-bar-support/issues/new?template=usage_feedback.yml)を任意でお寄せいただけます。良かった点、困った点、不明な点を短く書くだけでも構いません。投稿・インストール・肯定的な評価は必要ありません。Issueと投稿したGitHubアカウントは公開されるため、上記の情報制限を守ってください。投稿を別用途での引用・転載の許可とは扱いません。必要な場合は、原文の抜粋・アカウント表記・宛先・用途を具体化して別途確認します。
+
 ## Python companion alpha 0.1.1a1
 
 The [0.1.1a1 release](https://pypi.org/project/ai-usage-bar-mac/0.1.1a1/) is an early-stage Python companion for macOS, requiring Python 3.11 or newer. The optional GUI requires Tk and remains unverified on end-user Macs. This does not update the separate Windows application or provide a signed/notarized macOS app.

@@ -1,0 +1,76 @@
+name: Usage feedback / 使用感
+description: Optional feedback to improve AI Usage Bar / 改善のための任意の使用感
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share only what you want to help improve AI Usage Bar. Short, critical, or uncertain comments are welcome; no installation or favorable review is required.
+        AI Usage Barの改善のため、書きたいことだけお寄せください。短い感想、困ったこと、不明な点も歓迎します。インストールや肯定的な評価は必要ありません。
+
+        **This issue and your GitHub account are public.** Do not include real names, email addresses, employer names, credentials, personal values, raw logs/prompts, screenshots, or other attachments.
+        **Issueと投稿したGitHubアカウントは公開されます。** 実名・メール・勤務先・認証情報・個人値・生ログ・入力本文・画像・その他の添付資料は記載しないでください。
+
+        Suspected security vulnerabilities belong in [private vulnerability reporting](https://github.com/noah-traderlab/ai-usage-bar-support/security/advisories/new), not this public form.
+        脆弱性の疑いは、この公開フォームではなく上記の非公開報告へお寄せください。
+
+        Posting does not grant permission for quotation or republication for other purposes. Any such request would be separate and specify the excerpt, account attribution, recipient, and purpose.
+        投稿を別用途での引用・転載の許可とは扱いません。必要な場合は、抜粋・アカウント表記・宛先・用途を具体化して別途確認します。
+  - type: dropdown
+    id: usage_status
+    attributes:
+      label: Current use / 現在の利用状況
+      description: Choose the closest current state. / 最も近い現在の状況を選んでください。
+      options:
+        - Trying it / 試用中
+        - Ongoing use / 継続利用中
+        - Previously used; not using now / 以前使ったが現在は使っていない
+        - Never used / まだ使っていない（利用経験なし）
+        - Unknown / 不明
+    validations:
+      required: true
+  - type: dropdown
+    id: operating_system
+    attributes:
+      label: OS (optional) / OS（任意）
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other / その他
+        - Unknown / 不明
+    validations:
+      required: false
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component (optional) / 使ったもの（任意）
+      options:
+        - Windows application / Windowsアプリ
+        - Python companion - CLI / Pythonコンパニオン（コマンド）
+        - Python companion - GUI / Pythonコンパニオン（画面）
+        - Standalone macOS development preview / Macアプリ開発プレビュー
+        - Other / その他
+        - Unknown / 不明
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Version if known (optional) / 分かれば版（任意）
+      description: Unknown is fine. No installation, reinstall, or log sharing is needed. / 不明でも構いません。確認のためのインストール・再インストール・ログ共有は不要です。
+    validations:
+      required: false
+  - type: textarea
+    id: experience
+    attributes:
+      label: Your experience or question / 使用感・質問
+      description: Share any use case, helpful part, difficulty, or uncertainty. If you have never used it, describe your question or concern. / 用途・良かった点・困った点・不明な点のうち、書きたいことだけで構いません。未使用なら質問や気になっている点を書いてください。
+    validations:
+      required: true
+  - type: checkboxes
+    id: public_submission
+    attributes:
+      label: Public submission / 公開投稿
+      options:
+        - label: I understand this issue and my GitHub account are public, and I have omitted personal or sensitive information and attachments. / Issueと自分のGitHubアカウントが公開されることを理解し、個人情報・秘密情報・添付資料を含めていません。
+          required: true
