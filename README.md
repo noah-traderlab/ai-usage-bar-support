@@ -11,6 +11,27 @@ This repository contains support documents, not executable releases. Active deve
 
 Do not send API keys, passwords, login links, raw AI prompts, private logs, personal information, or files from a shared team folder. Do not reinstall or download a package just to identify your version. If a detail is unknown, say so.
 
+## Python companion alpha 0.1.1a1
+
+The [0.1.1a1 release](https://pypi.org/project/ai-usage-bar-mac/0.1.1a1/) is an early-stage Python companion for macOS, requiring Python 3.11 or newer. The optional GUI requires Tk and remains unverified on end-user Macs. This does not update the separate Windows application or provide a signed/notarized macOS app.
+
+**Publishing origin:** The maintainer intentionally moved publication from `noah-traderlab/ai-usage-bar` (`publish-pypi.yml`) to `noah-traderlab/ai-project` (`ai-usage-bar-publish.yml`). PyPI flags this release as **Change of provenance**. Before installing, inspect both files in the [PyPI Security tab](https://pypi.org/project/ai-usage-bar-mac/0.1.1a1/#security) and compare their publisher, workflow, and digests. Attestations identify the publishing origin; they do not guarantee code safety.
+
+In a new working directory, install this exact alpha into a virtual environment:
+
+~~~sh
+python3 -m venv .venv
+.venv/bin/python -m pip install "ai-usage-bar-mac==0.1.1a1"
+.venv/bin/aiusagebar --help
+.venv/bin/aiusagebar status --sharing
+~~~
+
+Installation contacts the package index and writes the virtual environment; it does not join a team or start the GUI. `--help` only displays command help. `status --sharing` reads saved local participation settings, which can contain a private key, but does not use or display that key or other personal values. It does not read raw logs, authentication data, or the shared folder, send reports, or save settings. It shows the consent ceiling, not a verified current effective sharing scope. Friends settings are separate. This check does not stop an already running joined GUI from reporting. Ordinary `status` can display personal values.
+
+The matching [source distribution in the release files](https://pypi.org/project/ai-usage-bar-mac/0.1.1a1/#files), `ai_usage_bar_mac-0.1.1a1.tar.gz`, includes the companion source, synthetic tests, packaging verifier, licenses, and `docs/python-package-release.md` verification instructions. The wheel does not include all these checks. Synthetic checks do not establish macOS GUI behavior or a security audit.
+
+The historical Python 0.1.0 package does not contain `status --sharing`; use the exact version above if you want this feature. For ordinary bugs or installation questions, use the public issue channel above. Send suspected vulnerabilities only through the private reporting channel; do not post private logs, keys, or vulnerability details publicly.
+
 ## Source and release history
 
 The [original public repository](https://github.com/noah-traderlab/ai-usage-bar) remains a read-only source and release archive. Its historical source, tags, and releases are not replaced by this support repository. It cannot accept new reports while archived.
