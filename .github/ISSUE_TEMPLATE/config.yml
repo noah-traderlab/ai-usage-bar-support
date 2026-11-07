@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Privately report a security vulnerability / 非公開の脆弱性報告
+    url: https://github.com/noah-traderlab/ai-usage-bar-support/security/advisories/new
+    about: Use GitHub private vulnerability reporting. Do not put vulnerability details in a public issue.

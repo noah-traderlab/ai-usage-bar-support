@@ -1,0 +1,35 @@
+name: Bug report or usage question
+description: Public, non-sensitive issues for AI Usage Bar
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. For suspected security vulnerabilities, use [Report a vulnerability](https://github.com/noah-traderlab/ai-usage-bar-support/security/advisories/new).
+        Do not include credentials, raw prompts, personal information, team files, or private logs. Synthetic examples are sufficient.
+        このIssueは公開されます。セキュリティの問題は非公開報告へ。秘密情報・生ログ・入力本文・個人情報は投稿しないでください。
+  - type: input
+    id: platform-version
+    attributes:
+      label: Platform and version / OS・版
+      description: OS, component, version or file name if known. Unknown is fine; no reinstall is needed.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Expected and actual behavior / 期待する動作と症状
+      description: Describe the problem without private data.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction / 再現手順
+      description: Optional steps using synthetic data. Mention if reproduction is not yet known.
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: Public submission / 公開投稿
+      options:
+        - label: I understand this issue is public and have excluded sensitive information.
+          required: true
