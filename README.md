@@ -13,15 +13,23 @@ Do not send API keys, passwords, login links, raw AI prompts, private logs, pers
 
 ## Optional usage feedback / 任意の使用感
 
-If you have tried AI Usage Bar, you can share [usage feedback](https://github.com/noah-traderlab/ai-usage-bar-support/issues/new?template=usage_feedback.yml) to help improve it. Short comments about what helped, what was difficult, or what is unclear are welcome. Posting is optional; no installation or favorable review is required. Your issue and GitHub account are public, so follow the information limits above. Feedback does not grant permission for quotation or republication for other purposes; any such request would separately identify the exact excerpt, account attribution, recipient, and purpose.
+[Share feedback — optional, no sign-in or name required](https://docs.google.com/forms/d/e/1FAIpQLScucMa18bwOd0HByQKaym4i5IFk9-P_EEkQg2sbT11G-9GJpg/viewform). Short comments, difficulties, and questions are welcome, including from people who have not used the product. Responses are kept non-public for product improvement.
 
-AI Usage Barを使ってみた方は、改善のための[使用感](https://github.com/noah-traderlab/ai-usage-bar-support/issues/new?template=usage_feedback.yml)を任意でお寄せいただけます。良かった点、困った点、不明な点を短く書くだけでも構いません。投稿・インストール・肯定的な評価は必要ありません。Issueと投稿したGitHubアカウントは公開されるため、上記の情報制限を守ってください。投稿を別用途での引用・転載の許可とは扱いません。必要な場合は、原文の抜粋・アカウント表記・宛先・用途を具体化して別途確認します。
+No name or email address is required. Do not include secrets, raw logs, or personal information. Complete anonymity, including records kept by Google, is not guaranteed. Sending feedback does not grant permission to quote or republish it for other purposes. The form explains how to request a correction or deletion and the limits of those requests.
+
+[使用感を送る（匿名・ログイン不要・任意）](https://docs.google.com/forms/d/e/1FAIpQLScucMa18bwOd0HByQKaym4i5IFk9-P_EEkQg2sbT11G-9GJpg/viewform)。短い感想・困った点・不明点を歓迎します。未使用でも構いません。回答は一般公開せず、製品改善のため保管します。
+
+氏名・メールアドレスを求めません。秘密情報・生ログ・個人情報は書かないでください。Google側の通信記録等を含む完全匿名性は保証しません。送信を別用途への引用・転載の許可とは扱いません。訂正・削除依頼の方法と対応の限界はフォームに記載しています。
+
+If you prefer a public conversation, [GitHub usage feedback](https://github.com/noah-traderlab/ai-usage-bar-support/issues/new?template=usage_feedback.yml) remains available; a GitHub account is required and your issue/account are public. Neither route is a condition of downloading or using AI Usage Bar. Send suspected vulnerabilities only through the private reporting channel above.
 
 ## Python companion alpha 0.1.1a1
 
 The [0.1.1a1 release](https://pypi.org/project/ai-usage-bar-mac/0.1.1a1/) is an early-stage Python companion for macOS, requiring Python 3.11 or newer. The optional GUI requires Tk and remains unverified on end-user Macs. This does not update the separate Windows application or provide a signed/notarized macOS app.
 
 **Publishing origin:** The maintainer intentionally moved publication from `noah-traderlab/ai-usage-bar` (`publish-pypi.yml`) to `noah-traderlab/ai-project` (`ai-usage-bar-publish.yml`). PyPI flags this release as **Change of provenance**. Before installing, inspect both files in the [PyPI Security tab](https://pypi.org/project/ai-usage-bar-mac/0.1.1a1/#security) and compare their publisher, workflow, and digests. Attestations identify the publishing origin; they do not guarantee code safety.
+
+[Share feedback — optional, no sign-in or name required](https://docs.google.com/forms/d/e/1FAIpQLScucMa18bwOd0HByQKaym4i5IFk9-P_EEkQg2sbT11G-9GJpg/viewform). Short comments, difficulties, and questions are welcome, including from people who have not used the product. Responses are kept non-public for product improvement.
 
 In a new working directory, install this exact alpha into a virtual environment:
 
@@ -45,6 +53,8 @@ The [original public repository](https://github.com/noah-traderlab/ai-usage-bar)
 - [Windows 0.1.0 release](https://github.com/noah-traderlab/ai-usage-bar/releases/tag/windows-v0.1.0)
 - [Python/macOS companion 0.1.0 on PyPI](https://pypi.org/project/ai-usage-bar-mac/0.1.0/)
 - [Published maintenance documents, fixed historical revision](https://gist.github.com/noah-traderlab/04dd9db11afbf5ba97c3f4c18fc688d5/e7224dc4b45babc065c3b4fa98bbe65c9a345a99)
+
+[使用感を送る（匿名・ログイン不要・任意）](https://docs.google.com/forms/d/e/1FAIpQLScucMa18bwOd0HByQKaym4i5IFk9-P_EEkQg2sbT11G-9GJpg/viewform)。短い感想・困った点・不明点を歓迎します。未使用でも構いません。回答は一般公開せず、製品改善のため保管します。
 
 The same version number alone does not prove two files are identical. Standalone macOS application builds remain development previews, not a public signed/notarized release. Private development changes are not automatically included in previously published packages.
 

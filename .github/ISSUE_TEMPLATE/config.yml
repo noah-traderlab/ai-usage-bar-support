@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Optional feedback without an account / 匿名・ログイン不要の使用感
+    url: https://docs.google.com/forms/d/e/1FAIpQLScucMa18bwOd0HByQKaym4i5IFk9-P_EEkQg2sbT11G-9GJpg/viewform
+    about: No name or email required. Responses are non-public for product improvement; do not include secrets or vulnerability details.
   - name: Privately report a security vulnerability / 非公開の脆弱性報告
     url: https://github.com/noah-traderlab/ai-usage-bar-support/security/advisories/new
     about: Use GitHub private vulnerability reporting. Do not put vulnerability details in a public issue.
