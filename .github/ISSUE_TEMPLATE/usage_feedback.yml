@@ -26,6 +26,7 @@ body:
         - Previously used; not using now / 以前使ったが現在は使っていない
         - Never used / まだ使っていない（利用経験なし）
         - Unknown / 不明
+      default: 4
     validations:
       required: true
   - type: dropdown
