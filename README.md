@@ -23,11 +23,11 @@ No name or email address is required. Do not include secrets, raw logs, or perso
 
 If you prefer a public conversation, [GitHub usage feedback](https://github.com/noah-traderlab/ai-usage-bar-support/issues/new?template=usage_feedback.yml) remains available; a GitHub account is required and your issue/account are public. Neither route is a condition of downloading or using AI Usage Bar. Send suspected vulnerabilities only through the private reporting channel above.
 
-## Python companion alpha 0.1.1a3
+## Python companion alpha 0.1.1a4
 
-The [0.1.1a3 release](https://pypi.org/project/ai-usage-bar-mac/0.1.1a3/) was published on 2026-11-10. This is an early-stage Python companion for macOS, requiring Python 3.11 or newer. The optional GUI requires Tk and remains unverified on end-user Macs. This does not update the separate Windows application or provide a signed/notarized macOS app.
+The [0.1.1a4 release](https://pypi.org/project/ai-usage-bar-mac/0.1.1a4/) was published on 2026-11-11 UTC (2026-11-12 JST). This is an early-stage Python companion for macOS, requiring Python 3.11 or newer. The optional GUI requires Tk and remains unverified on end-user Macs. This does not update the separate Windows application or provide a signed/notarized macOS app.
 
-**Publishing origin:** Publication moved from `noah-traderlab/ai-usage-bar` (`publish-pypi.yml`) to `noah-traderlab/ai-project` (`ai-usage-bar-publish.yml`) with 0.1.1a1. PyPI flagged that version as **Change of provenance**. Before installing, inspect both files in the [PyPI Security tab](https://pypi.org/project/ai-usage-bar-mac/0.1.1a3/#security) and compare their publisher, workflow, and digests. Attestations identify the publishing origin; they do not guarantee code safety.
+**Publishing origin:** Publication moved from `noah-traderlab/ai-usage-bar` (`publish-pypi.yml`) to `noah-traderlab/ai-project` (`ai-usage-bar-publish.yml`) with 0.1.1a1. PyPI flagged that version as **Change of provenance**. Before installing, inspect both files in the [PyPI Security tab](https://pypi.org/project/ai-usage-bar-mac/0.1.1a4/#security) and compare their publisher, workflow, and digests. Attestations identify the publishing origin; they do not guarantee code safety.
 
 [Share feedback — optional, no sign-in or name required](https://docs.google.com/forms/d/e/1FAIpQLScucMa18bwOd0HByQKaym4i5IFk9-P_EEkQg2sbT11G-9GJpg/viewform). Short comments, difficulties, and questions are welcome, including from people who have not used the product. Responses are kept non-public for product improvement.
 
@@ -35,18 +35,18 @@ In a new working directory, install this exact alpha into a virtual environment:
 
 ~~~sh
 python3 -m venv .venv
-.venv/bin/python -m pip install "ai-usage-bar-mac==0.1.1a3"
+.venv/bin/python -m pip install "ai-usage-bar-mac==0.1.1a4"
 .venv/bin/aiusagebar --help
 .venv/bin/aiusagebar status --sharing
 ~~~
 
 Installation contacts the package index and writes the virtual environment; it does not join a team or start the GUI. `--help` only displays command help. `status --sharing` reads saved local participation settings, which can contain a private key, but does not use or display that key or other personal values. It does not read raw logs, authentication data, or the shared folder, send reports, or save settings. It shows the consent ceiling, not a verified current effective sharing scope. Friends settings are separate. This check does not stop an already running joined GUI from reporting. Ordinary `status` can display personal values.
 
-The matching [source distribution in the release files](https://pypi.org/project/ai-usage-bar-mac/0.1.1a3/#files), `ai_usage_bar_mac-0.1.1a3.tar.gz`, includes the companion source, synthetic tests, packaging verifier, licenses, and `docs/python-package-release.md` verification instructions. The wheel does not include all these checks. Synthetic checks do not establish macOS GUI behavior or a security audit.
+The matching [source distribution in the release files](https://pypi.org/project/ai-usage-bar-mac/0.1.1a4/#files), `ai_usage_bar_mac-0.1.1a4.tar.gz`, includes the companion source, synthetic tests, packaging verifier, licenses, and `docs/python-package-release.md` verification instructions. The wheel does not include all these checks. Synthetic checks do not establish macOS GUI behavior or a security audit.
 
-Version 0.1.1a3 keeps daily totals available when a Claude or Codex model field has an invalid type. The affected usage is classified under an unknown model instead of being assigned to the previous model. Normal model changes and duplicate-record handling are preserved. Claude remaining-quota parsing also keeps nonnumeric or non-finite utilization unknown instead of displaying 100% remaining or raising a conversion error; a valid value for the other quota window remains available.
+Version 0.1.1a4 prevents a positive non-finite token count, such as the JSON numeric value `1e309`, from stopping later valid records in a Claude or Codex log file. Non-finite float counts are treated as zero while other valid values and subsequent records remain usable. Existing handling of integers, finite positive floats, truncation, negative values, booleans, and duplicate records is preserved. The 10 added token-value regression methods use synthetic data; real-world occurrence and affected user counts remain unknown.
 
-The final Linux package verification passed all 122 synthetic regression methods with no failures, errors, or skips, and all 36 selftest checks. These checks use synthetic data and do not establish real-user adoption, macOS GUI behavior, or a security audit.
+The final Linux package verification passed all 132 synthetic regression methods with no failures, errors, or skips, and all 36 selftest checks. These checks use synthetic data and do not establish real-user adoption, macOS GUI behavior, or a security audit. The repair does not change timestamps, sharing/reporting behavior, or notification delivery.
 
 The historical Python 0.1.0 package does not contain `status --sharing`; use the exact version above if you want this feature. For ordinary bugs or installation questions, use the public issue channel above. Send suspected vulnerabilities only through the private reporting channel; do not post private logs, keys, or vulnerability details publicly.
 
@@ -58,6 +58,7 @@ The [original public repository](https://github.com/noah-traderlab/ai-usage-bar)
 - [Python/macOS companion 0.1.0 on PyPI](https://pypi.org/project/ai-usage-bar-mac/0.1.0/)
 - [Previous Python companion alpha 0.1.1a1](https://pypi.org/project/ai-usage-bar-mac/0.1.1a1/)
 - [Previous Python companion alpha 0.1.1a2](https://pypi.org/project/ai-usage-bar-mac/0.1.1a2/) fixed Codex record object shapes that could interrupt later usage parsing. That release's final Linux package verification passed 49 regression methods without failures, errors, or skips, plus 36 selftest checks.
+- [Previous Python companion alpha 0.1.1a3](https://pypi.org/project/ai-usage-bar-mac/0.1.1a3/) was published on 2026-11-10. It keeps daily totals available when a Claude or Codex model field has an invalid type, classifying affected usage under an unknown model instead of the previous model while preserving normal model changes and duplicate handling. Claude remaining-quota parsing keeps nonnumeric or non-finite utilization unknown instead of displaying 100% remaining or raising a conversion error; a valid value for the other quota window remains available. That release's final Linux package verification passed 122 regression methods without failures, errors, or skips, plus 36 selftest checks. These are historical a3 results, not a substitute for checking a4.
 - [Published maintenance documents, fixed historical revision](https://gist.github.com/noah-traderlab/04dd9db11afbf5ba97c3f4c18fc688d5/e7224dc4b45babc065c3b4fa98bbe65c9a345a99)
 
 [使用感を送る（匿名・ログイン不要・任意）](https://docs.google.com/forms/d/e/1FAIpQLScucMa18bwOd0HByQKaym4i5IFk9-P_EEkQg2sbT11G-9GJpg/viewform)。短い感想・困った点・不明点を歓迎します。未使用でも構いません。回答は一般公開せず、製品改善のため保管します。
