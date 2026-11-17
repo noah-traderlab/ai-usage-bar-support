@@ -2,7 +2,17 @@
 
 This is the maintainer-operated support repository for **AI Usage Bar**. It provides a public place for ordinary bug reports and a separate private channel for suspected security vulnerabilities.
 
-This repository contains support documents, not executable releases. Active development remains in the private `noah-traderlab/ai-project` repository, under `ai-usage-bar/`.
+This repository provides support documents and explicitly labeled Windows candidate releases. Active development remains in the private `noah-traderlab/ai-project` repository, under `ai-usage-bar/`. GitHub's automatically generated source archives for this support repository contain support documents, not the application source.
+
+## Windows 0.1.1-rc.1 candidate / Windows候補版
+
+[Download Windows 0.1.1-rc.1 ZIP](https://github.com/noah-traderlab/ai-usage-bar-support/releases/download/windows-v0.1.1-rc.1/AI-Usage-Bar-Windows-0.1.1-rc.1.zip) · [Release notes and checksums](https://github.com/noah-traderlab/ai-usage-bar-support/releases/tag/windows-v0.1.1-rc.1) · [2026-11-17 verification addendum / 検証追補](WINDOWS-0.1.1-rc.1-VERIFICATION.md)
+
+[使用感を送る（匿名・ログイン不要・任意）](https://docs.google.com/forms/d/e/1FAIpQLScucMa18bwOd0HByQKaym4i5IFk9-P_EEkQg2sbT11G-9GJpg/viewform)。短い感想・困った点・不明点・未使用の意見も歓迎します。改善目的で回答を非公開保存します。回答はダウンロード・利用の条件ではありません。匿名性の限界・訂正削除方法は受付をご覧ください。
+
+This free, unsigned **pre-release** requires explicit administrator approval of team devices and clears stale usage displays on reload, after revocation, and when loading fails. Old automatic approvals and incomplete approval records require manual reapproval; existing settings and data need not be deleted. The exact ZIP passed automated installation, running 0.1.0 update, synthetic settings preservation, startup/graceful exit, and removal on Windows Server 2025 with administrator role. Windows 10/11, non-administrator execution, SmartScreen, manual installer/settings UI, full asynchronous UI behavior, AI login, signed team reports, and Mac interoperability remain unverified. See the addendum before installation. The ZIP's older "unreleased/not installed" descriptions record its creation stage; the dated addendum records the subsequent verification and candidate publication.
+
+The distribution includes the MIT license and third-party notices. Existing Windows/AI/API/storage contracts and costs are separate. No change is made to the historical Windows 0.1.0 or Mac/Python releases.
 
 ## Choose the appropriate channel
 
@@ -75,4 +85,4 @@ AI assistance used for investigation, writing, or fixes should be disclosed. Rep
 
 通常の不具合・導入の質問は公開Issue、セキュリティ上の問題は上記の非公開「Report a vulnerability」を使ってください。非公開報告にはGitHubへのログインが必要です。OS、分かる範囲の版・ファイル名、期待する動作と実際の症状、架空データでの再現手順を記載してください。秘密情報、生ログ、入力本文、第三者の個人情報は不要です。不明な版は不明のままで構いません。
 
-旧リポジトリは閲覧用アーカイブのまま、開発正本はprivateの `ai-project/ai-usage-bar/` です。この受付の設置は、新しい修正版の配布や利用者数の増加を意味しません。
+旧リポジトリは閲覧用アーカイブのまま、開発正本はprivateの `ai-project/ai-usage-bar/` です。実際の配布版と検証範囲は上記のRelease・PyPI案内を参照してください。受付の設置やダウンロード数を、確認済み利用者数・第三者採用には換算しません。
