@@ -1,0 +1,32 @@
+{
+    "schemaVersion":  1,
+    "kitVersion":  "1.0.0",
+    "targetVersion":  "0.1.1-rc.1",
+    "scope":  "Single-threaded, synthetic callback ordering in the published TeamRefreshGate type only.",
+    "status":  "failed",
+    "stage":  "zip_sha256",
+    "runtime":  {
+                    "powerShell":  "5.1.26100.9818",
+                    "clr":  "4.0.30319.42000"
+                },
+    "input":  {
+                  "zipExpectedSha256":  "de18af23a57f4d3b2b29ee68b46eb477abe7edd307d7bc09cb7eef3b18cfbd16",
+                  "setupExpectedSha256":  "bd14eaa2313a1267f1d2a6ed59e586c7e411fb62b9f4ddabb6222e8c483466cd",
+                  "appExpectedSha256":  "d93b0bf33397c01c40c0c4a6fb5979463b8c7c2243c3b8d876c3790da5c62c60",
+                  "zipActualSha256":  "f6c6409f4e2f931cf9e659e2e84597030b65492575013439832f6863337ec008"
+              },
+    "setupReflectionOnlyLoaded":  false,
+    "appLoaded":  false,
+    "probeInvoked":  false,
+    "cases":  [
+
+              ],
+    "limitations":  [
+                        "Not a UI, authorization, report validation, signature, network or installation test.",
+                        "No Program.Main, setup Main, Form, TeamService, key generation, shared folder or user data access.",
+                        "Callbacks run synchronously on one owner thread; this does not test concurrent access.",
+                        "Pinned hashes identify these exact bytes; they are not a publisher signature or proof of all program behavior."
+                    ],
+    "failureStage":  "zip_sha256",
+    "errorCode":  "zip_sha256_mismatch"
+}

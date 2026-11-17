@@ -2,7 +2,7 @@
 
 This is the maintainer-operated support repository for **AI Usage Bar**. It provides a public place for ordinary bug reports and a separate private channel for suspected security vulnerabilities.
 
-This repository provides support documents and explicitly labeled Windows candidate releases. Active development remains in the private `noah-traderlab/ai-project` repository, under `ai-usage-bar/`. GitHub's automatically generated source archives for this support repository contain support documents, not the application source.
+This repository provides support documents and explicitly labeled Windows candidate releases. Active development remains in the private `noah-traderlab/ai-project` repository, under `ai-usage-bar/`. GitHub's automatically generated source archives for this support repository contain support documents and limited verification-kit source, not the application source.
 
 ## Windows 0.1.1-rc.1 candidate / Windows候補版
 
@@ -13,6 +13,14 @@ This repository provides support documents and explicitly labeled Windows candid
 This free, unsigned **pre-release** requires explicit administrator approval of team devices and clears stale usage displays on reload, after revocation, and when loading fails. Old automatic approvals and incomplete approval records require manual reapproval; existing settings and data need not be deleted. The exact ZIP passed automated installation, running 0.1.0 update, synthetic settings preservation, startup/graceful exit, and removal on Windows Server 2025 with administrator role. Windows 10/11, non-administrator execution, SmartScreen, manual installer/settings UI, full asynchronous UI behavior, AI login, signed team reports, and Mac interoperability remain unverified. See the addendum before installation. The ZIP's older "unreleased/not installed" descriptions record its creation stage; the dated addendum records the subsequent verification and candidate publication.
 
 The distribution includes the MIT license and third-party notices. Existing Windows/AI/API/storage contracts and costs are separate. No change is made to the historical Windows 0.1.0 or Mac/Python releases.
+
+## Reproducible defensive maintenance / 公開検証
+
+[Windows refresh-gate research kit](research/windows-refresh-2026-11-17/README.md) · [研究事例（日本語）](research/windows-refresh-2026-11-17/CASE-STUDY.md)
+
+This free, source-available kit checks five synthetic callback-ordering scenarios directly against the published 0.1.1-rc.1 binary. It runs locally without installing the app. The code, expected/observed results, pinned hashes, MIT terms and limits are available together; it does not test the complete UI, authorization or signed reports.
+
+[Optional feedback — no account or real name required](https://docs.google.com/forms/d/e/1FAIpQLScucMa18bwOd0HByQKaym4i5IFk9-P_EEkQg2sbT11G-9GJpg/viewform). Short comments and unused-product feedback are welcome. Responses are kept non-public for product improvement.
 
 ## Choose the appropriate channel
 
