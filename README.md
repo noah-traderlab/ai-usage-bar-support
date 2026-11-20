@@ -41,11 +41,11 @@ No name or email address is required. Do not include secrets, raw logs, or perso
 
 If you prefer a public conversation, [GitHub usage feedback](https://github.com/noah-traderlab/ai-usage-bar-support/issues/new?template=usage_feedback.yml) remains available; a GitHub account is required and your issue/account are public. Neither route is a condition of downloading or using AI Usage Bar. Send suspected vulnerabilities only through the private reporting channel above.
 
-## Python companion 0.1.1a7 for macOS — manual download
+## Python companion 0.1.1a8 for macOS — manual download
 
-[Download the 0.1.1a7 wheel](https://github.com/noah-traderlab/ai-usage-bar-support/releases/download/python-v0.1.1a7/ai_usage_bar_mac-0.1.1a7-py3-none-any.whl) · [Python source, SHA-256 and installation instructions](https://github.com/noah-traderlab/ai-usage-bar-support/releases/tag/python-v0.1.1a7) · [使用感を送る（ログイン不要・任意）](https://docs.google.com/forms/d/e/1FAIpQLScucMa18bwOd0HByQKaym4i5IFk9-P_EEkQg2sbT11G-9GJpg/viewform)
+[Download the 0.1.1a8 wheel](https://github.com/noah-traderlab/ai-usage-bar-support/releases/download/python-v0.1.1a8/ai_usage_bar_mac-0.1.1a8-py3-none-any.whl) · [Python source, SHA-256 and installation instructions](https://github.com/noah-traderlab/ai-usage-bar-support/releases/tag/python-v0.1.1a8) · [使用感を送る（ログイン不要・任意）](https://docs.google.com/forms/d/e/1FAIpQLScucMa18bwOd0HByQKaym4i5IFk9-P_EEkQg2sbT11G-9GJpg/viewform)
 
-This free alpha requires Python 3.11 or newer. If you leave a team while the shared folder is disconnected, the CLI now tells you that your report may still remain. Follow the manual installation instructions on the release page. The optional Tk GUI remains unverified on end-user Macs. Feedback is optional and kept private for product improvement.
+The 0.1.1a8 alpha requires Python 3.11 or later and Tk for the optional GUI. When you leave a team, the GUI shows whether it removed your shared report, found it already absent, or could not confirm removal. If the shared folder is disconnected, the report may remain. Follow the manual installation instructions on the release page. The GUI has not been tested on a Mac for this release. Feedback is optional and kept private for product improvement. The [previous 0.1.1a7 manual release](https://github.com/noah-traderlab/ai-usage-bar-support/releases/tag/python-v0.1.1a7) is still available.
 
 ## Python companion alpha 0.1.1a6
 
