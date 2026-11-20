@@ -2,7 +2,7 @@
 
 This is the maintainer-operated support repository for **AI Usage Bar**. It provides a public place for ordinary bug reports and a separate private channel for suspected security vulnerabilities.
 
-This repository provides support documents and explicitly labeled Windows candidate releases. Active development remains in the private `noah-traderlab/ai-project` repository, under `ai-usage-bar/`. GitHub's automatically generated source archives for this support repository contain support documents and limited verification-kit source, not the application source.
+This repository provides support documents, Windows candidate releases, and manual downloads of the Python companion for macOS. Active development continues in the private `noah-traderlab/ai-project` repository under `ai-usage-bar/`. For the Python companion's source, download the named Python source distribution from its release page. GitHub's automatically generated source archives contain this support repository's documents and verification kits.
 
 ## Windows 0.1.1-rc.1 candidate / Windows候補版
 
@@ -40,6 +40,12 @@ No name or email address is required. Do not include secrets, raw logs, or perso
 氏名・メールアドレスを求めません。秘密情報・生ログ・個人情報は書かないでください。Google側の通信記録等を含む完全匿名性は保証しません。送信を別用途への引用・転載の許可とは扱いません。訂正・削除依頼の方法と対応の限界はフォームに記載しています。
 
 If you prefer a public conversation, [GitHub usage feedback](https://github.com/noah-traderlab/ai-usage-bar-support/issues/new?template=usage_feedback.yml) remains available; a GitHub account is required and your issue/account are public. Neither route is a condition of downloading or using AI Usage Bar. Send suspected vulnerabilities only through the private reporting channel above.
+
+## Python companion 0.1.1a7 for macOS — manual download
+
+[Download the 0.1.1a7 wheel](https://github.com/noah-traderlab/ai-usage-bar-support/releases/download/python-v0.1.1a7/ai_usage_bar_mac-0.1.1a7-py3-none-any.whl) · [Python source, SHA-256 and installation instructions](https://github.com/noah-traderlab/ai-usage-bar-support/releases/tag/python-v0.1.1a7) · [使用感を送る（ログイン不要・任意）](https://docs.google.com/forms/d/e/1FAIpQLScucMa18bwOd0HByQKaym4i5IFk9-P_EEkQg2sbT11G-9GJpg/viewform)
+
+This free alpha requires Python 3.11 or newer. If you leave a team while the shared folder is disconnected, the CLI now tells you that your report may still remain. Follow the manual installation instructions on the release page. The optional Tk GUI remains unverified on end-user Macs. Feedback is optional and kept private for product improvement.
 
 ## Python companion alpha 0.1.1a6
 
