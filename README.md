@@ -47,6 +47,8 @@ The [0.1.1a6 release](https://pypi.org/project/ai-usage-bar-mac/0.1.1a6/) was pu
 
 This is an early-stage Python companion for macOS, requiring Python 3.11 or newer. The optional GUI requires Tk and remains unverified on end-user Macs. This does not update the separate Windows application or provide a signed/notarized macOS app.
 
+**Leaving a team in 0.1.1a6.** If the shared folder is disconnected when you run `aiusagebar leave`, you leave the team on this device. The command can say it deleted your report even though a previously sent report is still in the shared folder. To confirm removal, ask the person who manages the shared folder to check.
+
 **Publishing origin:** Publication moved from `noah-traderlab/ai-usage-bar` (`publish-pypi.yml`) to `noah-traderlab/ai-project` (`ai-usage-bar-publish.yml`) with 0.1.1a1. PyPI flagged that version as **Change of provenance**. Before installing, inspect both files in the [0.1.1a6 Security tab](https://pypi.org/project/ai-usage-bar-mac/0.1.1a6/#security) and compare their publisher, workflow, and digests. Attestations identify the publishing origin; they do not guarantee code safety.
 
 [Share feedback — optional, no sign-in or name required](https://docs.google.com/forms/d/e/1FAIpQLScucMa18bwOd0HByQKaym4i5IFk9-P_EEkQg2sbT11G-9GJpg/viewform). Short comments, difficulties, and questions are welcome, including from people who have not used the product. Responses are kept non-public for product improvement.
